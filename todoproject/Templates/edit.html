@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container1"  >
+<div class="col-md-12" >
+            <h2 style="text-align:center;">Edit</h2>
+            <div class="shadow card" >
+                <form method="POST"  class="p-1 shadow">
+                    <div class="form-group">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">confirm</button>
+                        </div>
+</form>
+            </div><br>
+        </div>
+    </div>
+{% endblock %}
